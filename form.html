@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <script src='scripts/form.js'></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <h1>
+                BTI225 - Final
+            </h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="center">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="interest.html">Interests</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <aside class="col-1">
+            <h3>Here is a test video!</h3>
+            <video width="300" controls>
+                <source src="video/big_buck_bunny.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </aside>
+    
+        <section class="feedbackform col-2">
+        <form name="feedback" id="feedback" method="post" action="https://httpbin.org/post" class="feedback" onsubmit="return formValidation()">
+            <h2>I would love your feedback!</h2>
+            <label for="fullname">Full Name:</label>
+            <input required type="text" id="fullname" name="fullname"><br>
+            
+            <label for="email">Email:</label>
+            <input required type="email" id="email" name="email"><br>
+    
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="(999) 999-9999 (Optional)"><br>
+    
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" placeholder="(Optional)"><br>
+    
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" placeholder="(Optional)"><br>
+    
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="(Optional)"><br>
+    
+            <div class="textbox">
+                <label for="message">Message:</label>
+                <textarea required class="input" type="textarea" id="message" name="message" rows="3"></textarea></textarea><br>
+            </div>
+            
+            <div class="button">
+            <input type="submit" value="Submit" class="submitButton">
+            <input type="reset" value="Clear" class="clearButton" onclick="clearErrors()">
+            </div>
+    
+        </form>
+        </section>
+    
+        <aside class="col-3">
+        <h3>Errors</h3>
+        <div id="error"></div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="center">
+            &copy; Jimmy Tran 2022
+        </div>
+    </footer>
+
+</body>
+
+</html>
