@@ -293,7 +293,7 @@ label {
 
 .button{
     width: 204px;
-    padding-left: 100px;
+    padding-left: 98px;
     margin: 0 auto;
 }
 
@@ -303,7 +303,6 @@ label {
 }
 
 textarea {
-    margin-left: 2px;
     width: 200px;
     height: 50px;
     font: 1em sans-serif;
