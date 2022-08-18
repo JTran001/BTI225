@@ -10,10 +10,12 @@ function validatePhone(){
     phone = phone.trim();
     var errorStyle = document.getElementById("phone");
 
+    // If phone is empty it is good.
     if(phone == ""){
         return true;
     }
 
+    // Check if (), spaces and '-' are in the correct positions, checks the character count as well.
     if (phone.charAt(0) !== '(' || phone.charAt(4) !== ')' || phone.charAt(5) !== ' ' || phone.charAt(9) !== '-' || phone.length !== 14) {
         showErrors("&#x274C; The phone is not in the correct format!<br>&emsp;&ensp; Format: (111) 111-1111<br>");
         errorStyle.style.border = "2px solid red"
@@ -21,6 +23,7 @@ function validatePhone(){
         return false;
     }  
 
+    // This block of code is to check if all chars at their respective positions are digits.
     var digit = Number.isInteger(parseInt(phone[1]));
     digit = Number.isInteger(parseInt(phone[2])) && digit;
     digit = Number.isInteger(parseInt(phone[3])) && digit;

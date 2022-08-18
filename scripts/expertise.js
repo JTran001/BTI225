@@ -32,6 +32,7 @@ function makeRequest() {
 
                 console.log('The fetched data: ', data); // for debugging
 
+                // This for loop makes the cards and inserts them into the div in the expertise.html
                 for(var i = 0; i < data.data.length; i++){
                     var cards = document.querySelector(".cards");
                     var newCard = document.createElement("article");

@@ -68,20 +68,18 @@ footer {
     margin: auto;
 }
 
-
-.center{
+.center {
 	max-width:1100px;
 	margin:0 auto;
 	padding-left:20px;
 	padding-right:20px;
 }
 
-header{
+header {
     text-align: center;
 }
 
-h1
-{
+h1 {
     font-size: 4rem;
     color: #66BFBF;
     margin: 0 auto;
@@ -90,8 +88,7 @@ h1
     line-height: 2;
 }
 
-h2
-{
+h2 {
     font-size: 2.5rem;
     color: #66BFBF;
     font-family: 'Montserrat', sans-serif;
@@ -100,14 +97,14 @@ h2
     text-align: center;
 }
 
-h3
-{
+h3 {
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
+    text-align: center;
+    margin: 0 auto;
 }
 
-hr
-{
+hr {
   border: dotted #769FCD 6px;
   border-bottom: none;
   width:  4%;
@@ -115,77 +112,68 @@ hr
 }
 
 /*Homepage Styles*/
-.main h2{
+.main h2 {
     text-align: center;
 }
 
-.middle_container h2{
+.middle_container h2 {
     text-align: center;
 }
 
-.middle_container img{
+.middle_container img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.middle_container
-{
+.middle_container {
     margin: 10px 0;
     align-items: center;
 }
 
-.mushroom
-{
+.mushroom {
     height: 200px;
     width: 200px;
     border-radius: 100%;
     border: solid black 5px;
 }
 
-.intro
-{
+.intro {
     width: 30%;
     margin: auto;
 }
 
 /*Interests*/
-.skill_row
-{
+.skill_row{
     width: 50%;
     margin: 5% auto 5% auto;
     text-align: left;
 }
 
-.computer_img
-{
+.computer_img{
     width: 200px;
     float: left;
     margin-right: 30px;
 }
 
-.controller_img
-{
+.controller_img{
     width: 200px;
     float: right;
     margin-left: 30px;
     margin-bottom: 50px;
 }
 
-aside 
-{ 
+aside { 
     width: 525px; 
     float: left; 
 }
 
-main  
-{ 
+main { 
     width: 525px; 
     float: left; 
 }
 
-.container
-{
+.container {
     margin-top: 25px;
     text-align: center;
     margin-left: auto;
@@ -194,12 +182,7 @@ main
 }
 
 /*Expertise*/
-h3{
-    text-align: center;
-    margin: 0 auto;
-}
-
-table{
+table {
     margin: 0 auto;
 }
 
@@ -246,11 +229,11 @@ img {
 }
 
 /*Form Styles*/
-video{
+video {
     margin-top: 8px;
 }
 
-section form h2{
+section form h2 {
     text-align: center;
 }
 
@@ -265,11 +248,11 @@ section form h2{
     margin-bottom: 15px;
 }
 
-input, label{
+input, label {
     margin: 2px;
 }
 
-input{
+input {
     font: 1em sans-serif;
     width: 200px;
     box-sizing: border-box;
@@ -277,7 +260,7 @@ input{
     margin-bottom: 4px;
 }
 
-select{
+select {
     font: 1em sans-serif;
     margin-left: 2px;
     width: 200px;
@@ -291,18 +274,19 @@ label {
     text-align: right;
 }
 
-.button{
+.button {
     width: 204px;
     padding-left: 98px;
     margin: 0 auto;
 }
 
-#fullname:valid, #email:valid, #message:valid{
+#fullname:valid, #email:valid, #message:valid {
     border: 2px solid green;
     border-radius: 2px;
 }
 
 textarea {
+    vertical-align: top;
     width: 200px;
     height: 50px;
     font: 1em sans-serif;
@@ -312,17 +296,13 @@ textarea {
     resize: none;
 }
 
-textarea{
-    vertical-align: top;
-}
-
-aside.col-1{
+aside.col-1 {
     float: left;
     width: 300px;
     margin-right: 10px;
 }
 
-aside.col-3{
+aside.col-3 {
     float: left;
     width: 300px;
     margin-left: 10px;
